@@ -16,6 +16,12 @@ cask "forest" do
 
   binary "#{appdir}/Forest Desktop.app/Contents/MacOS/forest"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/Forest Desktop.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.forest.desktop",
     "~/Library/Caches/com.forest.desktop",
