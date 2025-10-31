@@ -1,8 +1,8 @@
 cask "forest" do
-  version "0.4.3"
-  sha256 "82c94147bd63f906a62e6daf83a359de109e50befc72b98d826f2cc751df1e7e"
+  version "0.4.5"
+  sha256 "f7d6cb845b93b93ac703f3f63d7b6f4b2b07259e4298e82d24a5d53161e011d6"
 
-  url "https://github.com/bwl/forest/releases/download/v#{version}/Forest.Desktop_#{version}_aarch64.dmg"
+  url "https://github.com/bwl/forest/releases/download/v#{version}/Forest_#{version}_aarch64.dmg"
   name "Forest Desktop"
   desc "Graph-native knowledge base with automatic semantic linking"
   homepage "https://github.com/bwl/forest"
