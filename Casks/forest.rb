@@ -12,13 +12,13 @@ cask "forest" do
     strategy :github_latest
   end
 
-  app "Forest Desktop.app"
+  app "Forest.app"
 
-  binary "#{appdir}/Forest Desktop.app/Contents/MacOS/forest"
+  binary "#{appdir}/Forest.app/Contents/MacOS/forest"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{appdir}/Forest Desktop.app"],
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/Forest.app"],
                    sudo: false
   end
 
@@ -35,7 +35,7 @@ cask "forest" do
     The binary has been linked to: #{HOMEBREW_PREFIX}/bin/forest
 
     Alternatively, you can add the app bundle's CLI to your PATH:
-      echo 'export PATH="$PATH:#{appdir}/Forest Desktop.app/Contents/MacOS"' >> ~/.zshrc
+      echo 'export PATH="$PATH:#{appdir}/Forest.app/Contents/MacOS"' >> ~/.zshrc
 
     Or use the GUI installer: Press ⌘K, type /cli-install
   EOS
