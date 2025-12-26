@@ -1,7 +1,7 @@
 class Tx < Formula
   desc "Simple speech-to-text CLI - start talking, hit Enter, get text"
   homepage "https://github.com/bwl/tx"
-  url "https://github.com/bwl/tx.git", tag: "v0.1.0"
+  url "https://github.com/bwl/tx.git", tag: "v0.2.0"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/bwl/tx.git", branch: "master"
 
@@ -14,13 +14,10 @@ class Tx < Formula
 
   def caveats
     <<~EOS
-      tx requires a Whisper model file. Download the base English model:
+      On first run, tx will prompt to download the Whisper model (~141MB).
+      The model is stored in ~/.local/share/tx/models/
 
-        mkdir -p ~/.local/share/tx/models
-        curl -L https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en.bin \\
-          -o ~/.local/share/tx/models/ggml-base.en.bin
-
-      Or set TX_MODEL_PATH to point to your model file.
+      Or set TX_MODEL_PATH to point to your own model file.
     EOS
   end
 
