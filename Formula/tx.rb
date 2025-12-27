@@ -1,7 +1,7 @@
 class Tx < Formula
   desc "Simple speech-to-text CLI - start talking, hit Enter, get text"
   homepage "https://github.com/bwl/tx"
-  url "https://github.com/bwl/tx.git", tag: "v0.3.0"
+  url "https://github.com/bwl/tx.git", tag: "v0.3.1"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/bwl/tx.git", branch: "master"
 
