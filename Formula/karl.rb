@@ -5,28 +5,17 @@ class Karl < Formula
   license "MIT"
 
   on_macos do
-    on_arm do
-      url "https://github.com/bwl/karl/releases/download/v#{version}/karl-darwin-arm64"
-      sha256 "PLACEHOLDER_ARM64"
+    url "https://github.com/bwl/karl/releases/download/v#{version}/karl-darwin-arm64"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
-      def install
-        bin.install "karl-darwin-arm64" => "karl"
-      end
-    end
-
-    on_intel do
-      url "https://github.com/bwl/karl/releases/download/v#{version}/karl-darwin-x64"
-      sha256 "PLACEHOLDER_X64"
-
-      def install
-        bin.install "karl-darwin-x64" => "karl"
-      end
+    def install
+      bin.install "karl-darwin-arm64" => "karl"
     end
   end
 
   on_linux do
     url "https://github.com/bwl/karl/releases/download/v#{version}/karl-linux-x64"
-    sha256 "PLACEHOLDER_LINUX"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
     def install
       bin.install "karl-linux-x64" => "karl"
