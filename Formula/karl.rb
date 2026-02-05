@@ -6,7 +6,7 @@ class Karl < Formula
 
   on_macos do
     url "https://github.com/bwl/karl/releases/download/v#{version}/karl-darwin-arm64"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "b9d81e5e275c7d79b041dd008a647d236b18876f03ebcd83c96803422eef4bf6"
 
     def install
       bin.install "karl-darwin-arm64" => "karl"
@@ -15,7 +15,7 @@ class Karl < Formula
 
   on_linux do
     url "https://github.com/bwl/karl/releases/download/v#{version}/karl-linux-x64"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "ff484ff2f49ae958ba8d2d467cb243cffe005088287ce5eb86a24caf463969c9"
 
     def install
       bin.install "karl-linux-x64" => "karl"
